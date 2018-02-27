@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-02-18 11:44:17
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-02-19 19:55:18
+* @Last Modified time: 2018-02-24 12:45:18
 */
 
 require('./index.css');
@@ -26,7 +26,7 @@ var nav = {
         })
         //注册点击事件
         $('.js-register').click(function(){
-        	window.location.href = './register.html';
+        	window.location.href = './user-register.html';
         })
         //退出点击事件
         $('.js-logout').click(function(){

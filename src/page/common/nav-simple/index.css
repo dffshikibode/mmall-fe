@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-02-18 11:17:54
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-02-18 11:28:51
+* @Last Modified time: 2018-02-26 20:04:56
 */
 
 .nav-simple{
@@ -15,4 +15,5 @@
 	font-size: 26px;
 	font-weight: bold;
 	color: #c60023;
+	text-decoration: none;
 }

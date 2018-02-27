@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-02-12 20:57:39
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-02-19 17:12:57
+* @Last Modified time: 2018-02-20 22:28:06
 */
 
 var Hogan = require('hogan.js');
@@ -34,8 +34,8 @@ var _mm = {
 
 				}
 			},
-				error : function(err){
-					typeof param.error === 'function' && param.error(err.statusText);
+			error : function(err){
+				typeof param.error === 'function' && param.error(err.statusText);
 			}
 		})
 
@@ -82,7 +82,7 @@ var _mm = {
 	},
 	//统一登录处理
 	doLogin : function(){
-		window.location.href = './login.html?redirect=' + encodeURIComponent(window.location.href);
+		window.location.href = './user-login.html?redirect=' + encodeURIComponent(window.location.href);
 	},
 	//页面跳转
 	goHonme : function(){
