@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-02-18 16:23:52
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-03-04 22:04:28
+* @Last Modified time: 2018-03-05 22:46:58
 */
 
 var _mm=require('util/mm.js');
@@ -19,11 +19,78 @@ var _cart = {
 	//添加到购物车
 	addTocart : function(productInfo, resolve, reject){
 		_mm.request({
-			url : _mm.getServerUrl('/product/detail.do'),
+			url : _mm.getServerUrl('/cart/add.do'),
 			data : productInfo,
 			success : resolve,
 			error : reject
 		})
+	},
+	//获取购物车列表
+	getCartList : function(resolve, reject){
+		_mm.request({
+			url : _mm.getServerUrl('/cart/list.do'),
+			success : resolve,
+			error : reject
+		})
+	},
+	//选中购物车商品
+	selectProduct : function(productId, resolve, reject){
+		_mm.request({
+			url : _mm.getServerUrl('/cart/select.do'),
+			data :{
+				productId : productId
+			},
+			success : resolve,
+			error : reject
+		})
+	},
+	//取消选中购物车商品
+	unselectProduct : function(productId, resolve, reject){
+		_mm.request({
+			url : _mm.getServerUrl('/cart/un_select.do'),
+			data :{
+				productId : productId
+			},
+			success : resolve,
+			error : reject
+		})
+	},
+	//选中全部商品
+	selectAllProduct : function(resolve, reject){
+		_mm.request({
+			url : _mm.getServerUrl('/cart/select_all.do'),
+			success : resolve,
+			error : reject
+		})
+	},
+	//取消选中全部商品
+	unselectAllProduct : function(resolve, reject){
+		_mm.request({
+			url : _mm.getServerUrl('/cart/un_select_all.do'),
+			success : resolve,
+			error : reject
+		})
+	},
+	//更新购物车商品数量
+	updateProduct : function(productInfo, resolve, reject){
+		_mm.request({
+			url : _mm.getServerUrl('/cart/update.do'),
+			data : productInfo,
+			success : resolve,
+			error : reject
+		})
+	},
+	//删除指定商品
+	deleteProduct : function(productIds, resolve, reject){
+		_mm.request({
+			url : _mm.getServerUrl('/cart/delete_product.do'),
+			data : {
+				productIds : productIds
+			},
+			success : resolve,
+			error : reject
+		})
 	}
+
 }
 module.exports = _cart;
