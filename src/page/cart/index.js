@@ -2,7 +2,7 @@
 * @Author: Administrator
 * @Date:   2018-03-05 10:54:55
 * @Last Modified by:   Administrator
-* @Last Modified time: 2018-03-06 20:49:20
+* @Last Modified time: 2018-03-10 15:31:45
 */
 
 require('./index.css');
@@ -112,7 +112,7 @@ var page = {
 				var arrProductIds = [],
 					$selectedItem = $('.cart-select:checked');
 				//循环查找选中的productIds
-				for(var i = 0, iLength = $selectedItem.length; i<i.iLength; i++){
+				for(var i = 0, iLength = $selectedItem.length; i<iLength; i++){
 					arrProductIds
 					.push($($selectedItem[i]).parents('.cart-table').data('product-id'));
 				}
