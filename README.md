@@ -35,6 +35,7 @@
  * 通用样式的定义
  
  ### 用户模块的开发
+ ![Image text](https://raw.githubusercontent.com/dffshikibode/mmall-fe/master/img-loader/user.png)
  1. 用户登录
   * post请求方式
   * 接口字段的验证
@@ -52,6 +53,7 @@
   * 对字段的验证和表单提交
   
   ### 商品模块开发
+  ![Image text](https://github.com/dffshikibode/mmall-fe/blob/master/img-loader/index.png)
   1. 首页
    * 左侧关键字导航页面开发
    * 活动展示轮播图
@@ -66,6 +68,7 @@
    * 添加购物车
  
  ### 购物车模块开发
+ ![Image text](https://raw.githubusercontent.com/dffshikibode/mmall-fe/master/img-loader/cart.png)
  1. 购物车中商品的展示
  2. 修改购物车中商品的数量
  3. 选中/取消选中购物车中的商品
@@ -74,6 +77,7 @@
  6. 购物车结算
  
  ### 订单模块的开发
+ ![Image text](https://raw.githubusercontent.com/dffshikibode/mmall-fe/master/img-loader/order.png)
  1. 订单确认页
   * 地址管理（增删改查）
   * 订单商品信息的展示
@@ -86,6 +90,7 @@
   * 未支付的订单可以继续支付
   
 ### 支付模块的开发
+![Image text](https://raw.githubusercontent.com/dffshikibode/mmall-fe/master/img-loader/payment.png)
  支付宝支付--notify_url方式
  
 ### 线上环境适配和项目自动化发布
