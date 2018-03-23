@@ -1,0 +1,13 @@
+[user]
+name = yimoff
+email = 936832416@qq.com
+
+[alias]
+co=checkout
+ci=commit
+st=status
+pl=pull
+ps=push
+dt=difftool
+ca=commit -am
+b=branch
